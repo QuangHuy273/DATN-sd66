@@ -1,4 +1,5 @@
 ﻿
+using API.Models;
 using Microsoft.EntityFrameworkCore;
 using static Azure.Core.HttpHeader;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -50,7 +51,10 @@ namespace API.Data
             //optionsBuilder.UseSqlServer($"Data Source=.\\{Db};Initial Catalog=Jolly;Integrated Security=True;TrustServerCertificate=True");
 
         }
-
+        public DbSet<NhaCungCap> TheLoais { get; set; }
+        public DbSet<NguyenLieu> NguyenLieus { get; set; }
+        public DbSet<NhanVien> NhanViens { get; set; }
+        public DbSet<TaiKhoan> TaiKhoans { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
