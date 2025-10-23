@@ -4,6 +4,1452 @@
     "title": "View-API",
     "version": "1.0"
   },
-  "paths": { },
-  "components": { }
+  "paths": {
+    "/api/Anh/upload-many": {
+      "post": {
+        "tags": [
+          "Anh"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Anh": {
+      "get": {
+        "tags": [
+          "Anh"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnhDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnhDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AnhDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Anh"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnhDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnhDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnhDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Anh"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Anh"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Anh"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Anh"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnhDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnhDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnhDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Anh/{id}": {
+      "get": {
+        "tags": [
+          "Anh"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnhDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Anh"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ChiTietCombo": {
+      "get": {
+        "tags": [
+          "ChiTietCombo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChiTietComboDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChiTietComboDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ChiTietComboDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ChiTietCombo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChiTietComboDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChiTietComboDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChiTietComboDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietCombo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietCombo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietCombo"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ChiTietCombo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChiTietComboDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChiTietComboDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChiTietComboDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietComboDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietComboDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietComboDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChiTietCombo/{id}": {
+      "get": {
+        "tags": [
+          "ChiTietCombo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietComboDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietComboDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChiTietComboDTO"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ChiTietCombo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Anh": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "type": "string",
+            "nullable": true
+          },
+          "duongDan": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "nguoiDungId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "chiTietMonAnId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "chiTietMonAn": {
+            "$ref": "#/components/schemas/ChiTietMonAn"
+          },
+          "nguoiDung": {
+            "$ref": "#/components/schemas/NguoiDung"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AnhDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "type": "string",
+            "nullable": true
+          },
+          "duongDan": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "nguoiDungId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "chiTietMonAnId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChiTietCombo": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "soLuong": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "comboId": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAnId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "combo": {
+            "$ref": "#/components/schemas/Combo"
+          },
+          "chiTietMonAn": {
+            "$ref": "#/components/schemas/ChiTietMonAn"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChiTietComboDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "soLuong": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "comboId": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAnId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChiTietGiamGia": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "chiTietMonAnId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "giamGiaId": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAn": {
+            "$ref": "#/components/schemas/ChiTietMonAn"
+          },
+          "giamGia": {
+            "$ref": "#/components/schemas/GiamGia"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChiTietMonAn": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "soluong": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "loaiViId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "nguyenLieuId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "nhaCungCapId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "kichCoId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "gia": {
+            "type": "number",
+            "format": "double"
+          },
+          "soNgayHSD": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "monAnId": {
+            "type": "string",
+            "nullable": true
+          },
+          "monAn": {
+            "$ref": "#/components/schemas/MonAn"
+          },
+          "nhaCungCap": {
+            "$ref": "#/components/schemas/NhaCungCap"
+          },
+          "nguyenLieu": {
+            "$ref": "#/components/schemas/NguyenLieu"
+          },
+          "loaiVi": {
+            "$ref": "#/components/schemas/LoaiVi"
+          },
+          "kichCo": {
+            "$ref": "#/components/schemas/KichCo"
+          },
+          "chiTietCombos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietCombo"
+            },
+            "nullable": true
+          },
+          "gioHangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GioHang"
+            },
+            "nullable": true
+          },
+          "chiTietGiamGias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietGiamGia"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChucVu": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "nhanVien": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NhanVien"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Combo": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "gia": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "loaiId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "chiTietCombos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietCombo"
+            },
+            "nullable": true
+          },
+          "hoaDonChiTiets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HoaDonChiTiet"
+            },
+            "nullable": true
+          },
+          "gioHangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GioHang"
+            },
+            "nullable": true
+          },
+          "loai": {
+            "$ref": "#/components/schemas/Loai"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DiaChi": {
+        "required": [
+          "diaChiCuThe"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "diaChiCuThe": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}a-zA-Z0-9\\s/-]+$",
+            "type": "string"
+          },
+          "quanHuyen": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "tinh": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "xaPhuong": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "nguoiDungId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "nhaCungCapId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "nguoiDung": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "nhaCungCap": {
+            "$ref": "#/components/schemas/NhaCungCap"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GiamGia": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "soluong": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "soTienKhuyenMai": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "phanTramKhuyenMai": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "soTienToiThieu": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "giaTriToiDa": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ngayBatDau": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "ngayKetThuc": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "moTa": {
+            "type": "string",
+            "nullable": true
+          },
+          "kieu": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "apDungSanPham": {
+            "type": "boolean"
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "dotGiamGia": {
+            "type": "boolean"
+          },
+          "chiTietGiamGias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietGiamGia"
+            },
+            "nullable": true
+          },
+          "hoaDons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HoaDon"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GioHang": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "soluong": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tongGia": {
+            "type": "number",
+            "format": "double"
+          },
+          "comboId": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAnId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "khachHangid": {
+            "type": "string",
+            "nullable": true
+          },
+          "khachHang": {
+            "$ref": "#/components/schemas/KhachHang"
+          },
+          "combo": {
+            "$ref": "#/components/schemas/Combo"
+          },
+          "chiTietMonAn": {
+            "$ref": "#/components/schemas/ChiTietMonAn"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HinhThucThanhToan": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "mota": {
+            "type": "string",
+            "nullable": true
+          },
+          "hoaDon": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HoaDon"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HoaDon": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "loaiHoaDon": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngayTao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tongTien": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "tongTienSauKhiGiam": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "number",
+            "format": "double"
+          },
+          "trangThai": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghiChu": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "giamGiaId": {
+            "type": "string",
+            "nullable": true
+          },
+          "nhanVienId": {
+            "type": "string",
+            "nullable": true
+          },
+          "khachHangId": {
+            "type": "string",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "hinhThucThanhToanId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "hinhThucThanhToan": {
+            "$ref": "#/components/schemas/HinhThucThanhToan"
+          },
+          "khachHang": {
+            "$ref": "#/components/schemas/KhachHang"
+          },
+          "nhanVien": {
+            "$ref": "#/components/schemas/NhanVien"
+          },
+          "giamGia": {
+            "$ref": "#/components/schemas/GiamGia"
+          }
+        },
+        "additionalProperties": false
+      },
+      "HoaDonChiTiet": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "soluong": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "thanhTien": {
+            "minimum": 1,
+            "type": "number",
+            "format": "double"
+          },
+          "hoaDonId": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAnId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "comboId": {
+            "type": "string",
+            "nullable": true
+          },
+          "combo": {
+            "$ref": "#/components/schemas/Combo"
+          },
+          "chiTietMonAn": {
+            "$ref": "#/components/schemas/ChiTietMonAn"
+          },
+          "hoaDon": {
+            "$ref": "#/components/schemas/HoaDon"
+          }
+        },
+        "additionalProperties": false
+      },
+      "KhachHang": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "ghiChu": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "nguoiDungId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nguoiDung": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "gioHangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GioHang"
+            },
+            "nullable": true
+          },
+          "hoaDons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HoaDon"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "KichCo": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mota": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAns": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietMonAn"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Loai": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "combos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Combo"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoaiVi": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "mota": {
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAns": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietMonAn"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MonAn": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "trangThai": {
+            "minimum": 1,
+            "type": "boolean"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "theLoaiId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "thuongHieuId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "thuongHieu": {
+            "$ref": "#/components/schemas/ThuongHieu"
+          },
+          "theLoai": {
+            "$ref": "#/components/schemas/TheLoai"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NguoiDung": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ho": {
+            "type": "string",
+            "nullable": true
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "gioiTinh": {
+            "type": "string",
+            "nullable": true
+          },
+          "gmail": {
+            "type": "string",
+            "format": "email",
+            "nullable": true
+          },
+          "sdt": {
+            "type": "string",
+            "format": "tel",
+            "nullable": true
+          },
+          "diaChis": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiaChi"
+            },
+            "nullable": true
+          },
+          "khachHang": {
+            "$ref": "#/components/schemas/KhachHang"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NguyenLieu": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "chiTietMonAn": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChiTietMonAn"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NhaCungCap": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          },
+          "diaChis": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DiaChi"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NhanVien": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangThai": {
+            "type": "boolean"
+          },
+          "ngayVaoLam": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "chucVuId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "nguoiDungId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nguoiDung": {
+            "$ref": "#/components/schemas/NguoiDung"
+          },
+          "hoaDons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HoaDon"
+            },
+            "nullable": true
+          },
+          "chucVu": {
+            "$ref": "#/components/schemas/ChucVu"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TheLoai": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThuongHieu": {
+        "required": [
+          "ten"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ten": {
+            "minLength": 1,
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string"
+          },
+          "mota": {
+            "pattern": "^[\\p{L}0-9\\s]+$",
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
 }

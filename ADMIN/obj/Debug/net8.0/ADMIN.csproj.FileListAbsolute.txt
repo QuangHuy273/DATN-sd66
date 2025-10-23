@@ -280,3 +280,4 @@ C:\Users\katar\source\repos\maliss-APP\ADMIN\bin\Debug\net8.0\runtimes\win\lib\n
 C:\Users\katar\source\repos\maliss-APP\ADMIN\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\katar\source\repos\maliss-APP\ADMIN\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\katar\source\repos\maliss-APP\ADMIN\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\katar\source\repos\maliss-APP\ADMIN\obj\Debug\net8.0\ADMIN.sourcelink.json
