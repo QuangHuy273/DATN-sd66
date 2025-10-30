@@ -5,4 +5,5 @@
         public string CurrentRole { get; set; } = "";
         public string CurrentUserName { get; set; } = "";
     }
+
 }
