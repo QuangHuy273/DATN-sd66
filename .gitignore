@@ -1,0 +1,100 @@
+#######################################
+#   VISUAL STUDIO / .NET IGNORE RULES #
+#######################################
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+[Aa][Rr][Mm]*/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio settings
+.vs/
+.vscode/
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Publish outputs
+publish/
+out/
+*.Publish.xml
+
+# Environment files
+.env
+.env.*
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Backup & cache
+*.bak
+*.tmp
+*.swp
+*.cache
+*.dbmdl
+*.jfm
+*.tlog
+
+# Database
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Rider / ReSharper
+_ReSharper*/
+.idea/
+*.DotSettings.user
+
+#######################################
+#   BLAZOR CLIENT (WebAssembly) RULES #
+#######################################
+
+# Node.js dependencies
+node_modules/
+bower_components/
+
+# Build artifacts
+dist/
+build/
+temp/
+wwwroot/dist/
+wwwroot/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+#######################################
+#   OS SYSTEM FILES
+#######################################
+
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
